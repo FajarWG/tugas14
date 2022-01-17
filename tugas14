@@ -1,0 +1,66 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+ <img src="banner.PNG" width="100%">
+<div class="w3-bar w3-yellow">
+    <button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Teknologi')">Teknologi</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('HTML')">HTML</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Python')">Python</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Arduino')">Arduino</button>
+</div>
+<div id="Home" class="w3-container w3-animate-bottom kota">
+    <h1>Selamat Datang</h1>
+    <hr>
+    <p>Perkenalkan nama saya Fajar Wahyu Gumelar dari kelas IF-6, Ini Tugas 13 Saya.</p>
+    <p>Terima Kasih</p>
+</div>
+
+<div id="Teknologi" class="w3-container w3-animate-fading kota" style="display:none">
+ <h2>Teknologi</h2>
+ <hr>
+ <p>Teknologi adalah keseluruhan sarana untuk menyediakan barang-barang yang diperlukan 
+     bagi kelangsungan dan kenyamanan hidup manusia. Penggunaan teknologi oleh manusia 
+     diawali dengan pengubahan sumber daya alam menjadi alat-alat sederhana.</p>
+ <img src="tekonologi.jpg" width="100%">
+</div>
+<div id="HTML" class="w3-container w3-animate-bottom kota" style="display:none">
+ <h2>HTML</h2>
+ <hr>
+ <p>HTML merupakan singkatan dari Hypertext Markup Language, yaitu bahasa markup 
+     standar untuk membuat dan menyusun halaman dan aplikasi web. Anda bisa 
+     menggunakan bahasa markup ini untuk menyusun bagian paragraf, heading, maupun link pada suatu halaman web.</p>
+ <img src="html.png" width="100%">
+</div>
+<div id="Python" class="w3-container w3-animate-top kota" style="display:none">
+    <h2>Phyton</h2>
+    <hr>
+    <p>Python adalah bahasa pemrograman yang populer digunakan 
+        di seluruh dunia untuk mengembangkan situs web, algoritma 
+        dan menyederhanakan proses otomatisasi. Melalui bahasa pemrograman 
+        Python, setiap program akan menjadi lebih ringkas jika dibandingkan bahasa pemrograman lain.</p>
+    <img src="python.png" width="100%">
+</div>
+<div id="Arduino" class="w3-container w3-animate-zoom kota" style="display:none">
+ <h2>Arduino</h2>
+ <hr>
+ <p>Arduino adalah pengendali mikro single-board yang bersifat open-source, 
+     diturunkan dari Wiring platform, dirancang untuk memudahkan penggunaan 
+     elektronik dalam berbagai bidang. Hardwarenya memiliki prosesor Atmel AVR 
+     dan softwarenya memiliki bahasa pemrograman sendiri. Saat ini Arduino sangat populer di seluruh dunia.</p>
+ <img src="Arduino_uno.png" width="100%">
+</div>
+<script>
+function openKota(namaKota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namaKota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
