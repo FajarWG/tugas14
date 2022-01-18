@@ -1,65 +1,79 @@
 <html>
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="w3.css">
 <body>
- <img src="banner.PNG" width="100%">
-<div class="w3-bar w3-yellow">
-    <button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
-    <button class="w3-bar-item w3-button" onclick="openKota('Teknologi')">Teknologi</button>
-    <button class="w3-bar-item w3-button" onclick="openKota('HTML')">HTML</button>
-    <button class="w3-bar-item w3-button" onclick="openKota('Python')">Python</button>
-    <button class="w3-bar-item w3-button" onclick="openKota('Arduino')">Arduino</button>
+ <img src="banner.png" width="100%">
+<div class="w3-bar w3-white">
+    <button class="w3-bar-item w3-button" onclick="openArtikel('Home')">Home</button>
+    <button class="w3-bar-item w3-button" onclick="openArtikel('Teknologi')">Teknologi</button>
+    <button class="w3-bar-item w3-button" onclick="openArtikel('HTML')">HTML</button>
+    <button class="w3-bar-item w3-button" onclick="openArtikel('CSS')">CSS</button>
+    <button class="w3-bar-item w3-button" onclick="openArtikel('Javascript')">Javascript</button>
+    <button class="w3-bar-item w3-button" onclick="openArtikel('Python')">Python</button><br>
+    <hr>
 </div>
-<div id="Home" class="w3-container w3-animate-bottom kota">
+<div id="Home" class="w3-container w3-animate-bottom artikel">
     <h1>Selamat Datang</h1>
     <hr>
-    <p>Perkenalkan nama saya Fajar Wahyu Gumelar dari kelas IF-6, Ini Tugas 13 Saya.</p>
-    <p>Terima Kasih</p>
+    <p>Silahkan Pilih Informasi Yang akan Kalian Baca Melalui Navigation Diatas.</p><br>
+    <div class="w3-container w3-blue w3-card-2">
+        <p>Nama : Fajar Wahyu Gumelar</p>
+        <p>NIM : 10121242</p>
+        <p>Kelas : IF-6</p>
+    </div>
 </div>
 
-<div id="Teknologi" class="w3-container w3-animate-fading kota" style="display:none">
+<div id="Teknologi" class="w3-container w3-animate-fading artikel" style="display:none">
  <h2>Teknologi</h2>
  <hr>
+ <img src="tekonologi.jpg" width="60%">
  <p>Teknologi adalah keseluruhan sarana untuk menyediakan barang-barang yang diperlukan 
      bagi kelangsungan dan kenyamanan hidup manusia. Penggunaan teknologi oleh manusia 
      diawali dengan pengubahan sumber daya alam menjadi alat-alat sederhana.</p>
- <img src="tekonologi.jpg" width="100%">
 </div>
-<div id="HTML" class="w3-container w3-animate-bottom kota" style="display:none">
+<div id="HTML" class="w3-container w3-animate-bottom artikel" style="display:none">
  <h2>HTML</h2>
  <hr>
+ <img src="html.png" width="70%">
  <p>HTML merupakan singkatan dari Hypertext Markup Language, yaitu bahasa markup 
      standar untuk membuat dan menyusun halaman dan aplikasi web. Anda bisa 
      menggunakan bahasa markup ini untuk menyusun bagian paragraf, heading, maupun link pada suatu halaman web.</p>
- <img src="html.png" width="100%">
 </div>
-<div id="Python" class="w3-container w3-animate-top kota" style="display:none">
+<div id="Python" class="w3-container w3-animate-right artikel" style="display:none">
     <h2>Phyton</h2>
     <hr>
+    <img src="python.png" width="70%">
     <p>Python adalah bahasa pemrograman yang populer digunakan 
         di seluruh dunia untuk mengembangkan situs web, algoritma 
         dan menyederhanakan proses otomatisasi. Melalui bahasa pemrograman 
         Python, setiap program akan menjadi lebih ringkas jika dibandingkan bahasa pemrograman lain.</p>
-    <img src="python.png" width="100%">
 </div>
-<div id="Arduino" class="w3-container w3-animate-zoom kota" style="display:none">
- <h2>Arduino</h2>
- <hr>
- <p>Arduino adalah pengendali mikro single-board yang bersifat open-source, 
-     diturunkan dari Wiring platform, dirancang untuk memudahkan penggunaan 
-     elektronik dalam berbagai bidang. Hardwarenya memiliki prosesor Atmel AVR 
-     dan softwarenya memiliki bahasa pemrograman sendiri. Saat ini Arduino sangat populer di seluruh dunia.</p>
- <img src="Arduino_uno.png" width="100%">
+<div id="Javascript" class="w3-container w3-animate-zoom artikel" style="display:none">
+    <h2>Javascript</h2>
+    <hr>
+    <img src="javascript.jpg" width="70%">
+    <p>JavaScript adalah bahasa pemrograman yang paling banyak digunakan dalam pengembangan website, aplikasi, game, dan lainnya. Bahkan, produk dari perusahaan besar seperti Google, Facebook, dan LinkedIn juga telah menggunakan JavaScript. </p>
+    <p>JavaScript awalnya adalah bahasa pemrograman yang hanya bekerja dari sisi klien atau front end. Artinya proses pengolahan kode hanya akan berjalan di browser. </p>
+    <p>Saat itu Google membuat bahasa pemrograman ini semakin populer dengan menggunakan AJAX untuk fitur suggestion di kolom pencarian. AJAX alias Asynchronous JavaScript and XML adalah teknik pembaruan data halaman web tanpa proses reload. </p>
+    <p>Semenjak itu, banyak developer mulai memanfaatkan bahasa pemrograman ini untuk membuat website yang lebih menarik dan hidup. </p>
+    <p>Seiring perkembangannya, JavaScript tak hanya bisa digunakan di sisi client, tetapi juga di sisi server. Eksekusi bahasa pemrograman ini di sisi server dapat dilakukan dengan memanfaatkan platform framework JavaScript seperti Node.js, React.js, dan lainnya. </p>
+    <p>Dengan framework, banyak backend developer mulai banyak melirik bahasa pemrograman ini. Sehingga lahirlah produk-produk canggih seperti aplikasi untuk mobile, website aplikasi, hingga game online.</p>
 </div>
+<div id="CSS" class="w3-container w3-animate-top artikel" style="display:none">
+    <h2>CSS</h2>
+    <hr>
+    <img src="css.jpeg" width="70%">
+    <p>CSS adalah bahasa Cascading Style Sheet dan biasanya digunakan untuk mengatur tampilan elemen yang tertulis dalam bahasa markup, seperti HTML. CSS berfungsi untuk memisahkan konten dari tampilan visualnya di situs.</p>
+   </div>
 <script>
-function openKota(namaKota) {
+function openArtikel(namaArtikel) {
  var i;
- var x = document.getElementsByClassName("kota");
+ var x = document.getElementsByClassName("artikel");
  for (i = 0; i < x.length; i++) {
  x[i].style.display = "none"; 
  }
- document.getElementById(namaKota).style.display = "block"; 
+ document.getElementById(namaArtikel).style.display = "block"; 
 }
 </script>
 </body>
